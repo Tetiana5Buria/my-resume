@@ -16,7 +16,7 @@
   <div class="container">
     <div class="sidebar">
       <div class="profile-container">
-        <img src="./image/image.jpg" alt="My Photo" class="profile-photo" />
+        <img src="./image/me.jpg" alt="My Photo" class="profile-photo" />
       </div>
       <div class="contacts-container">
         <h3 class="sidebar-title pacifico-regular">Contacts</h3>
@@ -25,7 +25,7 @@
             &#9743:<a class="contacts-link" href="tel:+380976454342"> +380976454342</a>
           </li>
           <li class="contacts-item">
-            &#9993;:<a class="contacts-link" href="mailto:poriniya@gmail.com">poriniya@gmail.com</a>
+            &#9993;:<a class="contacts-link" href="mailto: buriatetiana2@gmail.com"> buriatetiana2@gmail.com</a>
           </li>
         </ul>
       </div>
@@ -83,29 +83,34 @@
       <span class="close">&times;</span>
       <img class="modal-content" id="modal-img">
     </div>
+
+    <!-- main content -->
     <div class="main-content">
-      <div>
-        </h2>
+      <header>
         <h1>Tatiana Buria</h1>
         <h3>Frontend developer</h3>
         <hr>
-        <p>
+        <article>
           Reliable and results-oriented team player with strong communication
           and organizational skills. Responsible and adept at prioritizing
           tasks to meet deadlines effectively. Dedicated to continuous
           learning and self-improvement to achieve outstanding results. A
           supporter of a healthy lifestyle, ready to contribute positively and
           bring value to the team.
-        </p>
-      </div>
-      <div>
-        <h3 class="main-content-title abril-fatface-regular">
+        </article>
+      </header>
+      <main>
+
+        <h3 class="main-content-title">
           Work Experience
           <hr>
         </h3>
         <div>
-          <h4>PJS “Liky Kirovohradshchyny”</h4>
-          <p>Apr 2018 – Apr 2022</p>
+          <div class="main-title_box">
+            <h4>PJS “Liky Kirovohradshchyny”</h4>
+            <p>Apr 2018 – Apr 2022</p>
+          </div>
+
           <ul>
             <li>Carried out cash transactions.</li>
             <li>
@@ -123,8 +128,11 @@
         </div>
         <div>
           <div>
-            <h4>Dolynska District State Administration</h4>
-            <p>Aug 2017 – Mar 2018</p>
+            <div class="main-title_box">
+              <h4>Dolynska District State Administration</h4>
+              <p>Aug 2017 – Mar 2018</p>
+            </div>
+
             <ul>
               <li>
                 Analyzed the economic situation in the district and developed
@@ -139,8 +147,11 @@
             </ul>
           </div>
           <div>
-            <h4>Ustynivska District State Administration</h4>
-            <p>Mar 2013 – Jul 2017</p>
+            <div class="main-title_box">
+              <h4>Ustynivska District State Administration</h4>
+              <p>Mar 2013 – Jul 2017</p>
+            </div>
+
             <ul>
               <li>
                 Controlled budget fund use and compliance.</li>
@@ -152,8 +163,11 @@
           </div>
 
           <div>
-            <h4>LLC “Agrocomplex”</h4>
-            <p>Jun 2011 – Sep 2011</p>
+            <div class="main-title_box">
+              <h4>LLC “Agrocomplex”</h4>
+              <p>Jun 2011 – Sep 2011</p>
+            </div>
+
             <ul>
               <li>Conducted payroll processing.</li>
               <li>Maintained documentation and reporting.</li>
@@ -162,30 +176,64 @@
 
         </div>
 
-        <h3 class="main-content-title abril-fatface-regular">Education</h3>
+        <h3 class="main-content-title">Education</h3>
         <hr>
         <div>
           <h4>
             Kyiv Academy of International Economy and International Relations
           </h4>
-          <h5 class="content-title"> Speciality: 'Business economics'</h5>
-          <p>September 2012 - July 2015 | Ukraine</p>
+          <div class="content_container">
+            <h5 class="content-title"> Speciality: 'Business economics'</h5>
+            <p>September 2012 - July 2015 | Ukraine</p>
+
+          </div>
+
         </div>
         <div>
           <h4>
             Kirovograd Cybernetic Technical College
           </h4>
-          <h5 class="content-title"> Speciality: 'Finance and credit'</h5>
-          <p>September 2007 - July 2011 | Ukraine</p>
+          <div class="content_container">
+            <h5 class="content-title"> Speciality: 'Finance and credit'</h5>
+            <p>September 2007 - July 2011 | Ukraine</p>
+          </div>
+        </div>
+
+        <div>
+          <h4>School of Programming "Shpp"</h4>
+          <div class="content_container">
+            <h5 class="content-title"> Speciality: 'Computer Science Basics'</h5>
+            <p>June 2024 - November 2024</p>
+          </div>
+
         </div>
         <div>
           <h4>School of Programming "Shpp"</h4>
-          <h5 class="content-title">Computer Science Basics</h5>
-          <p>June 2024 - November 2024</p>
-          <h5 class="content-title">Frontend Developer</h5>
-          <p>In this moment</p>
+          <div class="content_container">
+            <h5 class="content-title"> Speciality: 'Frontend Developer'</h5>
+            <p>In this moment</p>
+          </div>
         </div>
-      </div>
+
+        <!-- courses -->
+        <h3 class="main-content-title">Courses</h3>
+        <hr>
+        <div class="content_container">
+          <h5 class="content-title"> Campster Platform Speciality: 'Time Management'</h5>
+          <p>Oct 2024 – Nov 2024</p>
+        </div>
+        <div class="content_container">
+          <h5 class="content-title"> Campster Platform Speciality: 'Bussines English'</h5>
+          <p>Feb 2024 – May 2024
+          </p>
+        </div>
+        <div class="content_container">
+          <h5 class="content-title"> JT English Speciality: 'English Language B1'</h5>
+          <p> Feb 2024 – in this monent </p>
+        </div>
+
+      </main>
+
     </div>
   </div>
   <hr />

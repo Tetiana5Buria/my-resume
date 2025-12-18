@@ -1,11 +1,17 @@
 :root {
-  --primary-blue: #0000FF;
+  --primary-blue: #141495;
   --light-cyan: #E0FFFF;
   --text-gray: #696969;
   --white: #FFFFFF;
   --dark-gray: #1C2526;
   --accent: #1d0b58;
 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -50,18 +56,17 @@ a:hover {
 /* ====== Container ====== */
 .container {
   display: flex;
-  max-width: 1100px;
+  width: clamp(50rem, 50vw, 100rem);
   margin: 40px auto;
   background: var(--white);
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(28, 37, 38, 0.8);
-  /* #1C2526 з прозорістю */
   overflow: hidden;
 }
 
 /* ====== Sidebar ====== */
 .sidebar {
-  background: linear-gradient(180deg, var(--light-cyan), var(--white));
+  background: linear-gradient(180deg, var(--light-cyan));
   padding: 40px 25px;
   width: 30%;
   color: var(--dark-gray);
@@ -204,11 +209,11 @@ p {
 
 /* ====== Modal (сертифікати) ====== */
 .modal {
+  position: relative;
   display: none;
   position: fixed;
   inset: 0;
   background-color: rgba(28, 37, 38, 0.8);
-  /* #1C2526 з прозорістю */
   z-index: 1000;
 }
 
@@ -219,7 +224,7 @@ p {
   max-height: 80%;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(28, 37, 38, 0.3);
-  /* #1C2526 з прозорістю */
+
 }
 
 .close {
@@ -232,7 +237,7 @@ p {
   cursor: pointer;
 }
 
-/* ====== Адаптивність ====== */
+
 @media (max-width: 768px) {
   .sidebar {
     border-radius: 5px 5px 0 0;
